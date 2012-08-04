@@ -6,7 +6,7 @@ body {
     font-size: 1em;
 }
 
-header {
+header, footer nav {
     font-family: 'Lobster Two', cursive;
     width: 500px;
 }
@@ -16,26 +16,44 @@ header.main {
     margin: 20px auto 20px auto;
 }
 
-nav.main {
-    margin: 20px auto 40px auto;
-    width: 600px;
+footer nav {
+    font-size: 1.2em;
+    margin: 60px auto 40px auto;
+    width: 500px;
     float: center;
-    border-width: 1px;
-    border-color: #333333;
-    border-style: solid;
-
 }
 
-nav.main ul li {
+footer nav ul {
+    width: 300px;
+    margin: 0 auto;
+}
+
+footer nav ul li {
     display: inline;
     padding: 20px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    -moz-transition: background .3s ease-in-out;
+    -webkit-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+footer nav ul li:first-child {
+    margin-left: auto;
+}
+
+footer nav ul li:last-child {
+    margin-right: auto;
+}
+
+footer nav ul li:hover, footer nav ul li:focus {
     background: #cccccc;
 }
 
-footer.main {
+section.main {
     margin: 60px auto 20px auto;
     text-align: justify;
 }
