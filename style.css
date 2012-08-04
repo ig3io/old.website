@@ -4,6 +4,7 @@ body {
     margin: 0 auto;
     font-family: Helvetica, Arial, Sans-serif;
     font-size: 1em;
+    color: rgba(0, 0, 0, .8);
 }
 
 header, footer nav {
@@ -12,9 +13,22 @@ header, footer nav {
 }
 
 header.main {
-    font-size: 1.8em;
+    font-size: 1.em;
     margin: 20px auto 20px auto;
     text-align: center;
+}
+
+header.main a {
+    color: rgba(0, 0, 0, .8);
+    text-decoration: none;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+header.main a:hover, header.main a:focus {
+    color: rgba(255, 0, 0, 0.8);
+    font-size: 1.1em;
 }
 
 footer nav {
@@ -31,7 +45,10 @@ footer nav ul {
 
 footer nav li a {
     text-decoration: none;
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .8);
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 footer nav ul li {
@@ -42,9 +59,6 @@ footer nav ul li {
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
-    -moz-transition: all .3s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
 }
 
 
@@ -57,10 +71,8 @@ footer nav ul li:last-child {
 }
 
 footer nav ul li a:hover, footer nav ul li a:focus {
-    color: rgba(0, 0, 0, .7);
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
+    color: rgba(255, 0, 0, .8);
+    font-size: 1.1em;
 }
 
 section.main {
@@ -70,5 +82,4 @@ section.main {
 
 section header {
     font-size: 1em;
-    color: rgba(0, 0, 0, 0.8);
 }
