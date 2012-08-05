@@ -1,6 +1,6 @@
 body {
     position: relative;
-    width: 500px;
+    width: 560px;
     margin: 0 auto;
     font-family: Helvetica, Arial, Sans-serif;
     font-size: 1em;
@@ -9,7 +9,7 @@ body {
 
 header, footer nav {
     font-family: 'Lobster Two', cursive;
-    width: 500px;
+    width: 560px;
 }
 
 header.main {
@@ -34,7 +34,7 @@ header.main a:hover, header.main a:focus {
 footer nav {
     font-size: 1.5em;
     margin: 60px auto 40px auto;
-    width: 500px;
+    width: 560px;
 }
 
 footer nav ul {
