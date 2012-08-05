@@ -76,6 +76,7 @@ footer nav ul li a:hover, footer nav ul li a:focus {
 }
 
 section.main {
+    width: 500px;
     margin: 60px auto 20px auto;
     text-align: justify;
 }
