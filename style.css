@@ -115,6 +115,7 @@ footer nav ul li a {
 }
 
 footer nav ul li {
+    font-family: 'Droid Serif', Georgia, Times, serif;
     display: inline;
     padding: 20px;
     margin-left: auto;
