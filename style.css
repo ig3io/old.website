@@ -1,4 +1,4 @@
-body {
+section.container {
     position: relative;
     width: 560px;
     margin: 0 auto;
@@ -27,7 +27,7 @@ header.main a {
 }
 
 header.main a:hover, header.main a:focus {
-    color: rgba(255, 0, 0, 0.8);
+    color: rgba(225, 0, 0, 0.8);
     font-size: 1.1em;
 }
 
@@ -72,17 +72,25 @@ section.main ul li a {
 }
 
 section.main ul li a:hover, section.main ul li a:focus {
-    color: rgba(255, 0, 0, .8);
+    color: rgba(225, 0, 0, .8);
+}
+
+footer {
+    width: 560px;
+}
+
+footer section {
+    font-size: 0.8em;
+    text-align: center;
 }
 
 footer nav {
     font-size: 2em;
     margin: 60px auto 40px auto;
-    width: 560px;
+    width: 400px;
 }
 
 footer nav ul {
-    width: 400px;
     margin: 0 auto;
 }
 
@@ -115,6 +123,6 @@ footer nav ul li:last-child {
 }
 
 footer nav ul li a:hover, footer nav ul li a:focus {
-    color: rgba(255, 0, 0, .8);
+    color: rgba(225, 0, 0, .8);
     font-size: 1.1em;
 }
