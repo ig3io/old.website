@@ -27,7 +27,7 @@ header.main a {
 }
 
 header.main a:hover, header.main a:focus {
-    color: rgba(225, 0, 0, 0.8);
+    color: rgba(170, 0, 0, 0.8);
     font-size: 1.1em;
 }
 
@@ -72,7 +72,7 @@ section.main ul li a {
 }
 
 section.main ul li a:hover, section.main ul li a:focus {
-    color: rgba(225, 0, 0, .8);
+    color: rgba(170, 0, 0, .8);
 }
 
 footer {
@@ -123,6 +123,6 @@ footer nav ul li:last-child {
 }
 
 footer nav ul li a:hover, footer nav ul li a:focus {
-    color: rgba(225, 0, 0, .8);
+    color: rgba(170, 0, 0, .8);
     font-size: 1.1em;
 }
