@@ -65,9 +65,9 @@ section.main ul li {
 
 section.main ul li:before {
     position: relative;
-    bottom: .15em;
+    bottom: .30em;
     content:".";
-    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-family: 'Droid Serif', Helvetica, Arial, sans-serif;
     font-weight: bold;
     margin-right: 0.2em;
 }
