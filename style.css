@@ -34,9 +34,9 @@ header.main h1 a {
 header.main a {
     color: rgba(0, 0, 0, .8);
     text-decoration: none;
-    -moz-transition: all .3s ease-in-out;
+    /* -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; */
 }
 
 header.main a:hover, header.main a:focus {
@@ -76,9 +76,9 @@ section.main ul li a {
     font-weight: bold;
     text-decoration: none;
     color: rgba(0, 0, 0, .8);
-    -moz-transition: all .3s ease-in-out;
+    /* -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; */
 
 }
 
@@ -109,9 +109,9 @@ footer nav ul li a {
     line-height: 40px;
     text-decoration: none;
     color: rgba(0, 0, 0, .8);
-    -moz-transition: all .3s ease-in-out;
+    /* -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; */
 }
 
 footer nav ul li {
