@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>Ignacio Contreras Pinilla</title>
+    <link>http://ignaciocontreras.com</link>
+    <pubDate>2013-01-21 18:55:20 +0100</pubDate>
+    <item>
+      <title>Haskell And Other Stuff</title>
+      <link>http://ignaciocontreras.com/haskell-and-other-stuff</link>
+      <pubDate>2013-01-21</pubDate>
+      <description>&lt;p&gt;This is more of a self reminder than anything else.&lt;/p&gt;
+
+&lt;p&gt;During the last 2 weeks, now that the finals are over, I&amp;#39;ve been (on the technical side of things, &lt;em&gt;outside&lt;/em&gt; my job):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Toying around with Haskell (my first contact with functional programming)&lt;/li&gt;
+&lt;li&gt;Learning more Python (I use it a lot lately, but I fear getting stuck)&lt;/li&gt;
+&lt;li&gt;Trying Ruhoh! (i.e. this blog)&lt;/li&gt;
+&lt;li&gt;Preparing a new project with a coleague (details yet to be disclosed)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, &lt;em&gt;por partes&lt;/em&gt;:&lt;/p&gt;
+
+&lt;h2 id="toc_0"&gt;Haskell&lt;/h2&gt;
+
+&lt;p&gt;Oh, my. It&amp;#39;s fun, it&amp;#39;s new (to me), and it forces me to think differently:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Recursion, recursion!&lt;/li&gt;
+&lt;li&gt;First class functions&lt;/li&gt;
+&lt;li&gt;Lazy-evaluation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;A big &lt;em&gt;thanks&lt;/em&gt; to the authors of &lt;em&gt;&lt;a href="http://book.realworldhaskell.org"&gt;Real World Haskell&lt;/a&gt;&lt;/em&gt;. I&amp;#39;m still reading it.&lt;/p&gt;
+
+&lt;p&gt;I&amp;#39;ve read good reviews about &lt;em&gt;&lt;a href="http://learnyouahaskell.com"&gt;Learn You A Haskell&lt;/a&gt;&lt;/em&gt;, so it might be worth a shot.&lt;/p&gt;
+
+&lt;h2 id="toc_1"&gt;Python&lt;/h2&gt;
+
+&lt;p&gt;I&amp;#39;m still undecided to do the leap towards Python 3. Mainly because I really like &lt;a href="http://flask.pocoo.org"&gt;Flask&lt;/a&gt; as a web framework and hasn&amp;#39;t been ported yet (just to name a specific package).&lt;/p&gt;
+
+&lt;p&gt;I suppose I&amp;#39;m going to wait until I mature enough some of my half-done packages so I can spice it with Python 3 support.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I should grab an up-to-date book and stop complaining.&lt;/p&gt;
+
+&lt;h2 id="toc_2"&gt;&lt;a href="http://ruhoh.com"&gt;Ruhoh&lt;/a&gt;!&lt;/h2&gt;
+
+&lt;p&gt;Well, right now I&amp;#39;m pretty happy with it. I&amp;#39;m still customizing it, and it&amp;#39;s fun. Nothing more to add right now.&lt;/p&gt;
+
+&lt;h2 id="toc_3"&gt;New Project&lt;/h2&gt;
+
+&lt;p&gt;Just not yet.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>PyCharm And PEP8</title>
+      <link>http://ignaciocontreras.com/pycharm-and-pep8</link>
+      <pubDate>2012-12-03</pubDate>
+      <description>&lt;p&gt;First, I&amp;#39;ve got to say that I&amp;#39;m very happy with PyCharm and it&amp;#39;s capacity to ease my day-to-day development with Python (I&amp;#39;m still amazed of how working with a Windows box became comfortable).&lt;/p&gt;
+
+&lt;p&gt;That being said, PEP8 support could be better. I&amp;#39;m not talking about style-error highlighting. I&amp;#39;m talking about the formatter &lt;em&gt;un-PEP-izing&lt;/em&gt; my code.&lt;/p&gt;
+
+&lt;p&gt;Then I found that I could easily configure the multi-line method calls wrapping (my main problem) through &lt;code&gt;File &amp;gt; Settings &amp;gt; Style &amp;gt; Python&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;#39;m kind of a jerk for complaining.&lt;/p&gt;
+
+&lt;p&gt;As per PEP8 checking and warnings, I don&amp;#39;t know if there&amp;#39;s a more elegant way, but for now it make wonders. Thanks to the people at &lt;em&gt;Ocean Observatories Iniciative&lt;/em&gt; and their &lt;a href="https://confluence.oceanobservatories.org/display/CIDev/PyCharm+-+PEP8+and+Pyflakes+Integration"&gt;Confluence wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Replicating the instructions, we have:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Go to &lt;code&gt;File &amp;gt; Settings &amp;gt; External Tools&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Click to add a new one&lt;/li&gt;
+&lt;li&gt;Name, group and description of your choice (only name is required)&lt;/li&gt;
+&lt;li&gt;I left the checkbox options unchanged&lt;/li&gt;
+&lt;li&gt;Program: route to &lt;code&gt;pep8&lt;/code&gt; executable (e.g. &lt;code&gt;C:\Python27\Scripts\pep8.exe&lt;/code&gt; in my setup)&lt;/li&gt;
+&lt;li&gt;Parameters: &lt;code&gt;$FilePath$&lt;/code&gt; (can be selected through &lt;code&gt;Insert Macro&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Working Directory: &lt;code&gt;$ProjectFileDir$&lt;/code&gt; (can be selected via &lt;code&gt;Insert Macro&lt;/code&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;With this, you can now go to &lt;code&gt;Tools&lt;/code&gt; and execute &lt;code&gt;pep8&lt;/code&gt; and see in the IDE console the warnings generated (if any). Is not specially pretty, but it&amp;#39;s not ugly.&lt;/p&gt;
+</description>
+    </item>
+    <item>
+      <title>Hello World!</title>
+      <link>http://ignaciocontreras.com/hello-world</link>
+      <pubDate>2012-11-27</pubDate>
+      <description>&lt;p&gt;First post. Testing out the platform. It looks really cool.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update (2013-01-20):&lt;/strong&gt; this was my first post using &lt;a href="http://calepin.co"&gt;calepin.co&lt;/a&gt;, a pretty simple but solid platform for self-publishing. I&amp;#39;ve moved to &lt;a href="http://ruhoh.com"&gt;ruhoh&lt;/a&gt; just for the sake of tweaking the site.&lt;/p&gt;
+</description>
+    </item>
+  </channel>
+</rss>

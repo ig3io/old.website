@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>PyCharm And PEP8</title>
+    <meta name="author" content="Ignacio Contreras">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/nachovia/stylesheets/bootstrap.min.css?0.8222778945617971" type="text/css" rel="stylesheet" media="all">
+<link href="/assets/nachovia/stylesheets/style.css?0.9320888494287214" type="text/css" rel="stylesheet" media="all">
+<link href="/assets/nachovia/widgets/google_prettify/stylesheets/twitter-bootstrap.css?0.1397637476914796" type="text/css" rel="stylesheet" media="all">
+
+    
+
+    <!-- Le fav and touch icons -->
+    <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    -->
+    <!-- Les custom fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Ignacio Contreras Pinilla</a>
+          <ul class="nav">
+              
+                <li><a href="/about">About Me</a></li>
+              
+                <li><a href="/archive">Archive</a></li>
+              
+                <li><a href="/categories">Categories</a></li>
+              
+                <li><a href="/pages">Pages</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        <div class="page-header">
+  <h1>PyCharm And PEP8 </h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>First, I&#39;ve got to say that I&#39;m very happy with PyCharm and it&#39;s capacity to ease my day-to-day development with Python (I&#39;m still amazed of how working with a Windows box became comfortable).</p>
+
+<p>That being said, PEP8 support could be better. I&#39;m not talking about style-error highlighting. I&#39;m talking about the formatter <em>un-PEP-izing</em> my code.</p>
+
+<p>Then I found that I could easily configure the multi-line method calls wrapping (my main problem) through <code>File &gt; Settings &gt; Style &gt; Python</code>.</p>
+
+<p>So I&#39;m kind of a jerk for complaining.</p>
+
+<p>As per PEP8 checking and warnings, I don&#39;t know if there&#39;s a more elegant way, but for now it make wonders. Thanks to the people at <em>Ocean Observatories Iniciative</em> and their <a href="https://confluence.oceanobservatories.org/display/CIDev/PyCharm+-+PEP8+and+Pyflakes+Integration">Confluence wiki</a>.</p>
+
+<p>Replicating the instructions, we have:</p>
+
+<ol>
+<li>Go to <code>File &gt; Settings &gt; External Tools</code></li>
+<li>Click to add a new one</li>
+<li>Name, group and description of your choice (only name is required)</li>
+<li>I left the checkbox options unchanged</li>
+<li>Program: route to <code>pep8</code> executable (e.g. <code>C:\Python27\Scripts\pep8.exe</code> in my setup)</li>
+<li>Parameters: <code>$FilePath$</code> (can be selected through <code>Insert Macro</code>)</li>
+<li>Working Directory: <code>$ProjectFileDir$</code> (can be selected via <code>Insert Macro</code>)</li>
+</ol>
+
+<p>With this, you can now go to <code>Tools</code> and execute <code>pep8</code> and see in the IDE console the warnings generated (if any). Is not specially pretty, but it&#39;s not ugly.</p>
+
+    <hr>
+    <div class="pagination">
+      <ul>
+          <li class="prev"><a href="/hello-world" title="Hello World!">&larr; Previous</a></li>
+
+          <li><a href="/archive">Archive</a></li>
+
+          <li class="next"><a href="/haskell-and-other-stuff" title="Haskell And Other Stuff">Next &rarr;</a></li>
+      </ul>
+    </div>
+    <hr>
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_developer = 1;
+    var disqus_shortname = 'ignaciocontreras'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>2012-12-03</span></div>
+    <br>
+    <h4>Categories</h4>
+    <ul class="tag_box">
+    </ul>
+    <br>
+    <h4>Tags</h4>
+    <ul class="tag_box">
+    </ul>
+  </div>
+</div>
+
+      </div>
+
+      <footer>
+        <p>&copy; Ignacio Contreras 2012 
+          with help from <a href="http://ruhoh.com" target="_blank" title="The Definitive Technical Blogging Framework">ruhoh</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Google Prettify -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/prettify/188.0.0/prettify.js"></script>
+<script>
+  var pres = document.getElementsByTagName("pre");
+  for (var i=0; i < pres.length; ++i) {
+    pres[i].className = "prettyprint linenums";
+  }
+  prettyPrint();
+</script>
+<!-- end Google Prettify -->
+    <script>
+  var _gaq=[['_setAccount','UA-123-12'],['_trackPageview']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+  </body>
+</html>
